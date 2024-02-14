@@ -15,6 +15,7 @@ def Hello():
 def hey():
     try:
         if request.method == 'POST':
+            print('1')
             selected_month = float(request.form['month'])
             age = float(request.form['age'])
             occupation = float(request.form['occupation'])
@@ -23,6 +24,7 @@ def hey():
             num_credit_card = float(request.form['num_credit_card'])
             interest_rate = float(request.form['interest_rate'])
             num_loans = float(request.form['num_loans'])
+            print('2')
             delay_due_date = float(request.form['delay_due_date'])
             delay_payments = float(request.form['delay_payments'])
             changed_credit_limit = float(request.form['changed_credit_limit'])
@@ -36,6 +38,7 @@ def hey():
             amount_invested_monthly = float(request.form['amount_invested_monthly'])
             monthly_balance = float(request.form['monthly_balance'])
             payment_behaviour = float(request.form['payment_behaviour'])
+            print(payment_behaviour)
             input_array = np.array([[selected_month,age,occupation,annualincome,num_bank_accounts,num_credit_card,interest_rate
                                      ,num_loans,delay_due_date,delay_payments,changed_credit_limit,credit_inquiry,credit_mix,outstanding_debts,credit_ration,credit_history_age,minimum_amount,
                                      EMI_per_month,amount_invested_monthly,payment_behaviour,monthly_balance]]).astype(np.float64)
