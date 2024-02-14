@@ -94,34 +94,91 @@
     <div class="innerdiv">
         <table>
             <tr style="padding:25px">
-              <td class="left"><label for="area">Area: </label>
-              <td><input class="tbox" type="text" id="area" name="area"  required></td>
-              <td class="left"><label for="roundness">Roundness: </label>
-              <td><input class="tbox" type="text" id="roundness" name="roundness"  required></td>
+              <td class="left"><label for="monthSelect">Select a month:</label>
+              <td>
+                <select id="monthSelect" name="month">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+              </td>
+              <td class="left"><label for="age">Age: </label>
+              <td><input class="tbox" type="text" id="age" name="age"  required></td>
             </tr>
             <tr style="padding:25px">
-                <td class="left"><label for="aspectratio">Aspect Ratio: </label>
-                <td><input class="tbox" type="text" id="aspectratio" name="aspectratio"  required></td>
-                <td class="left"><label for="compactness">Compactness: </label>
-                <td><input class="tbox" type="text" id="compactness" name="compactness"  required></td>
+                <td class="left"><label for="occupation">Occupation: </label>
+                <td><input class="tbox" type="text" id="occupation" name="occupation"  required></td>
+                <td class="left"><label for="annualincome">Annual Income: </label>
+                <td><input class="tbox" type="text" id="annualincome" name="annualincome"  required></td>
               </tr>
               <tr style="padding:25px">
-                <td class="left"><label for="eccentricity">Eccentricity: </label>
-                <td><input class="tbox" type="text" id="eccentricity" name="eccentricity"  required></td>
-                <td class="left"><label for="sf1">ShapeFactor1: </label>
-                <td><input class="tbox" type="text" id="sf1" name="sf1"  required></td>
+                <td class="left"><label for="num_bank_accounts">Number of Bank Accounts: </label>
+                <td><input class="tbox" type="text" id="num_bank_accounts" name="num_bank_accounts"  required></td>
+                <td class="left"><label for="num_credit_card">Number of Credit Cards: </label>
+                <td><input class="tbox" type="text" id="num_credit_card" name="num_credit_card"  required></td>
               </tr>
               <tr style="padding:25px">
-                <td class="left"><label for="extent">Extent: </label>
-                <td><input class="tbox" type="text" id="extent" name="extent"  required></td>
-                <td class="left"><label for="sf2">ShapeFactor2: </label>
-                <td><input class="tbox" type="text" id="sf2" name="sf2"  required></td>
+                <td class="left"><label for="interest_rate">Interest Rate: </label>
+                <td><input class="tbox" type="text" id="interest_rate" name="interest_rate"  required></td>
+                <td class="left"><label for="num_loans">Number of Loans: </label>
+                <td><input class="tbox" type="text" id="num_loans" name="num_loans"  required></td>
               </tr>
               <tr style="padding:25px">
-                <td class="left"><label for="solidity">Solidity: </label>
-                <td><input class="tbox" type="text" id="solidity" name="solidity"  required></td>
-                <td class="left"><label for="sf4">ShapeFactor4: </label>
-                <td><input class="tbox" type="text" id="sf4" name="sf4"  required></td>
+                <td class="left"><label for="delay_due_date">Delay from due date: </label>
+                <td><input class="tbox" type="text" id="delay_due_date" name="delay_due_date"  required></td>
+                <td class="left"><label for="delay_payments">Number of Delayed Payments: </label>
+                <td><input class="tbox" type="text" id="delay_payments" name="delay_payments"  required></td>
+              </tr>
+              <tr style="padding:25px">
+                <td class="left"><label for="changed_credit_limit">Changed Credit Limit: </label>
+                <td><input class="tbox" type="text" id="changed_credit_limit" name="changed_credit_limit"  required></td>
+                <td class="left"><label for="credit_inquiry">Number of Credit Inquiries: </label>
+                <td><input class="tbox" type="text" id="credit_inquiry" name="credit_inquiry"  required></td>
+              </tr>
+              <tr style="padding:25px">
+                <td class="left"><label for="credit_mix">Credit Mix: </label>
+                <td>
+                    <select id="credit_mix" name="credit_mix">
+                        <option value="1">Bad</option>
+                        <option value="2">Good</option>
+                        <option value="3">Standard</option>
+                    </select>
+                </td>
+                <td class="left"><label for="outstanding_debts">Outstanding Debts: </label>
+                <td><input class="tbox" type="text" id="outstanding_debts" name="outstanding_debts"  required></td>
+              </tr>
+              <tr style="padding:25px">
+                <td class="left"><label for="credit_ration">Credit Utilization Ratio: </label>
+                <td><input class="tbox" type="text" id="credit_ration" name="credit_ration"  required></td>
+                <td class="left"><label for="credit_history_age">Credit History Age: </label>
+                <td><input class="tbox" type="text" id="credit_history_age" name="credit_history_age"  required></td>
+              </tr>
+              <tr style="padding:25px">
+                <td class="left"><label for="minimum_amount">Payment of Minimum Amount: </label>
+                <td>
+                    <select id="minimum_amount" name="minimum_amount">
+                        <option value="1">No</option>
+                        <option value="2">Yes</option>
+                        <option value="3">NM</option>
+                    </select>
+                </td>
+                <td class="left"><label for="EMI_per_month">EMI per month: </label>
+                <td><input class="tbox" type="text" id="EMI_per_month" name="EMI_per_month"  required></td>
+              </tr>
+              <tr style="padding:25px">
+                <td class="left"><label for="amount_invested_monthly">Amount Invested Monthly: </label>
+                <td><input class="tbox" type="text" id="amount_invested_monthly" name="amount_invested_monthly"  required></td>
+                <td class="left"><label for="monthly_balance">Monthly Balance: </label>
+                <td><input class="tbox" type="text" id="monthly_balance" name="monthly_balance"  required></td>
               </tr>
         </table></br>
         <input type="submit" value="SUBMIT" class="sbtbutton">      
