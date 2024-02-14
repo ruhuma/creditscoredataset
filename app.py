@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 import joblib
 import pandas as pd
 import os
-
+python app.py
 app = Flask(__name__)
 @app.route('/')
 def Hello():
