@@ -180,6 +180,19 @@
                 <td class="left"><label for="monthly_balance">Monthly Balance: </label>
                 <td><input class="tbox" type="text" id="monthly_balance" name="monthly_balance"  required></td>
               </tr>
+              <tr style="padding:25px">
+                <td class="left"><label for="payment_behaviour">Payment Behaviour: </label>
+                <td> <select id="payment_behaviour" name="payment_behaviour">
+                    <option value="0">High spent small value payments</option>
+                    <option value="1">Low spent Large value payments</option>
+                    <option value="2">Low spent Medium value payments</option>
+                    <option value="3">Low spent Small value payments</option>
+                    <option value="4">High spent Medium value payments</option>
+                    <option value="5">High spent Large value payments</option>
+                </select></td>
+                <td ></td>
+                <td></td>
+              </tr>
         </table></br>
         <input type="submit" value="SUBMIT" class="sbtbutton">      
     </div>

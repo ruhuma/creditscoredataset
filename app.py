@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 import joblib
 import pandas as pd
 import os
-python app.py
+
 app = Flask(__name__)
 @app.route('/')
 def Hello():
@@ -15,7 +15,7 @@ def Hello():
 def hey():
     try:
         if request.method == 'POST':
-            
+            area = float(request.form['age'])
     except ValueError:
         # Handle the case where the input is not a valid float
         return "Invalid input. Please enter a valid value in the  fields."
